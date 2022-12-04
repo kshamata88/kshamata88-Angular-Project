@@ -1,0 +1,197 @@
+{
+  "menu":  [
+    {
+      "id": 1,
+      "name": "Cappuccino",
+      "description": "The awesome foursome!sizzling and juicy golden corn, yummy black olives, crunchy capsicum, and spicy/tangy red paprika",
+      "price": 1500,
+      "image":" /assets/coffee.jpg",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Black Tea",
+      "description":" dark reddish-gold hue, a hearty, slightly astringent flavor, and a moderate amount of caffeine",
+      "price": 1300,
+      "image": "/assets/tea.jpg",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "name":"Tomato Soup",
+      "description":"comforting classic for a reason: it's pretty and creamy; it's tangy and rich",
+      "price": 900,
+      "image":" /assets/tomatosoup.jpg",
+      "rating": 3
+    },
+    {
+      "id": 4,
+      "name": "Manchow Soup",
+      "description":"vegetables, scallions, and chicken, thickened with broth and corn flour, and flavored with generous doses of soy sauce, salt, garlic, chili peppers and, predominantly, ginger.",
+      "price": 1000,
+      "image": "/assets/manchowsoup.jpg",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Cream Soup",
+      "description":"Distinct flavor of the main ingredient (asparagus in cream of asparagus, etc.). No starchy taste from uncooked roux. .",
+      "price": 800,
+      "image": "/assets/creamsoup.jpg",
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "name": "Minestrone Soup",
+      "description":" beans, onions, celery, carrots, stock, and tomatoes,minestrone, since it is usually made out of whatever vegetables are in season.",
+      "price": 900,
+      "image": "/assets/minestronesoup.jpg",
+      "rating": 5
+    },
+    {
+      "id": 7,
+      "name": "Caesar Salad",
+      "description":"a salad of romaine lettuce tossed with an olive oil dressing, a coddled or raw egg, garlic, and grated cheese and topped with croutons and sometimes anchovies",
+      "price": 1100,
+      "image": "/assets/caesarsalad.jpg",
+      "rating": 5
+    },
+    {
+      "id": 8,
+      "name": "Greek Salad",
+      "description":"salad of juicy tomatoes, crisp cucumber, sliced red onion, green pepper, crumbly feta cheese and plump Kalamata olives",
+      "price": 1500,
+      "image": "/assets/greeksalad.webp",
+      "rating": 4
+    },
+    {
+      "id": 9,
+      "name": "Vegetable Salad",
+      "description":" marinated or sauced mixtures of raw or cooked vegetables,tomatoes, green beans, cucumbers, beets, and mushrooms",
+      "price": 1300,
+      "image": "/assets/vegetable salad.webp",
+      "rating": 3
+    },
+    {
+      "id": 10,
+      "name": "Garlic Bread",
+      "description":"topped with garlic and olive oil or butter and may include additional herbs, such as oregano or chives",
+      "price": 700,
+      "image": "/assets/garlicbread.jpg",
+      "rating": 4
+    },
+    {
+      "id": 11,
+      "name": "Veggie Wrap",
+      "description":"edamame, spinach, avocado, carrot, cucumber, and any other desired vegetables. Sprinkle with freshly ground black pepper, to taste",
+      "price": 600,
+      "image": "/assets/veggiewrap.jpg",
+      "rating": 5
+    },
+    {
+      "id": 12,
+      "name": "Momos",
+      "description":" bite-size dumplings made with a spoonful of stuffing wrapped in dough,Meat or vegetables fillings becomes succulent as it produces an intensively flavored broth sealed inside the wrappers",
+      "price": 2000,
+      "image": "/assets/momos.jpg",
+      "rating": 4
+    },
+    {
+      "id": 13,
+      "name": "Spring Roll",
+      "description":" rice paper, or sometimes wheat-and-egg dough, filled with a shredded mixture of vegetables and often meat or seafood, served fresh or deep-fried",
+      "price": 1050,
+      "image": "/assets/springroll.jpg",
+      "rating": 3
+    },
+    {
+      "id": 14,
+      "name": "Burger",
+      "description":"",
+      "price": 700,
+      "image": "/assets/burger.webp",
+      "rating": 3
+    },
+    {
+      "id": 15,
+      "name": "Sandwich",
+      "description":"flat round mass of minced meat or vegetables, which is fried and often eaten in a bread roll",
+      "price": 1500,
+      "image": "/assets/sandwich.jpg",
+      "rating": 5
+    },
+    {
+      "id": 16,
+      "name": "Pizza",
+      "description":"dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients",
+      "price": 1900,
+      "image": "/assets/pizza.webp",
+      "rating": 3
+    },
+    {
+      "id": 17,
+      "name": "Noodles",
+      "description":" bright creamy white or bright yellow color and firm texture,made from hard wheat flours",
+      "price": 2300,
+      "image": "/assets/noodles.jpg",
+      "rating": 5
+    },
+    {
+      "id": 18,
+      "name": "Sushi",
+      "description":" staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold",
+      "price": 1500,
+      "image": "/assets/sushi.jpg",
+      "rating": 4
+    },
+    {
+      "id": 19,
+      "name": "Pasta",
+      "description":"made from a mixture of flour, eggs, and water that is formed into different shapes and then boiled. Spaghetti, macaroni,noodles",
+      "price": 1800,
+      "image": "/assets/pasta.jpg",
+      "rating": 4
+    },
+    {
+      "id": 20,
+      "name": "Pastry",
+      "description":"a sweet dessert baked mainly from wheat flour, water, and fat,mixing flour, sugar, eggs, and other ingredients",
+      "price": 590,
+      "image": "/assets/pastry.webp",
+      "rating": 3
+    },
+    {
+      "id": 21,
+      "name":" Chocolate Waffle",
+      "description":"golden-brown in color, with a crispy outer texture and a soft interior, hot plates of a waffle iron, patterned",
+      "price": 1500,
+      "image": "/assets/chocolatewaffle.jpg",
+      "rating": 3
+    },
+    {
+      "id": 22,
+      "name": "Donuts",
+      "description":"sweetened or, sometimes, unsweetened dough fried in deep fat, typically shaped like a ring or, when prepared with a filling, a ball",
+      "price": 900,
+      "image": "/assets/chocolatedonuts.webp",
+      "rating": 2
+    },
+    {
+      "id": 23,
+      "name": "Icecream",
+      "description":"rich, sweet, creamy frozen food made from variously flavored cream and milk products churned or stirred to a smooth consistency during the freezing process and often containing gelatin, eggs, fruits, nuts, etc",
+      "price": 700,
+      "image": "/assets/icecream.jpg",
+      "rating": 4
+    },
+    {
+      "id": 24,
+      "name": "Chocolate Milkshake",
+      "description":"hocolate milkshake is an exceptional treat, topped with a nice dollop of whipped cream",
+      "price": 800,
+      "image": "/assets/chocolatemilkshake.jpg",
+      "rating": 3
+    }
+  ]
+}
+

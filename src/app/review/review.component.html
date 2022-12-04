@@ -1,0 +1,53 @@
+<form #rf="ngForm"(ngSubmit)="rf.valid && submitReview()">
+  <mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Review</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+<br>
+<div class="mb-3">
+  <label for="author" class="form-label">Name</label>
+  <input type="text" class="form-control" id="author"
+  [(ngModel)]="reviewForm.author"
+  name="author"
+  #author="ngModel"
+  required>
+  <div class="alert alert-danger" *ngIf="author.dirty && author.invalid">
+    Author field is required.
+  </div>
+</div>
+<div class="mb-3">
+  <label for="email" class="form-label">Email</label>
+  <input type="email" class="form-control" id="email"
+  [(ngModel)]="reviewForm.email"
+  name="email"
+  #email="ngModel"
+  required>
+  <div class="alert alert-danger" *ngIf="email.dirty && email.invalid">
+    Email field is required.
+</div>
+</div>
+<div class="mb-3">
+  <label for="rating" class="form-label">Rating</label>
+  <select class="form-select" id="rating" [(ngModel)]="reviewForm.rating" name="rating">
+    <option [value]="rating" *ngFor="let rating of ratings">{{rating}}</option>
+  </select>
+</div>
+<div class="mb-3">
+  <label for="description" class="form-label">Description</label>
+  <textarea class="form-control" id="description" rows="3"
+  [(ngModel)]="reviewForm.description" name="description"></textarea>
+</div>
+<button type="submit" class="btn btn-primary"[disabled]="rf.invalid">Submit</button>
+</form>
+
+{{reviewForm | json}}
+

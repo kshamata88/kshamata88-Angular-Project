@@ -1,0 +1,79 @@
+<div class="row">
+  <div class="col mb-3">
+      <input
+       type="text"
+      class="form-control"
+      placeholder="Search"
+      [(ngModel)]="filterBy">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col mb-3">
+      <input type="checkbox" class="form-check-input" [(ngModel)]="showImage">Show Images
+    </div>
+  </div>
+
+<ng-container *ngIf="menu$ | async">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div *ngFor="let menu of filteredMenu | slice:0:24" class="col">
+
+      <div class="d-flex justify-content-center" *ngIf="showImage">
+  <img
+  [src]="menu.image"
+  class="card-img-top"
+  [alt]="menu.name"
+  [ngStyle]="imgStyles">
+</div>
+<button mat-icon-button color="warn" aria-label="Example icon-button with a heart icon">
+  <mat-icon>favorite</mat-icon>
+</button>
+<div class="card-body">
+  <h2 class="card-title"
+  [routerLink]="['/menu', menu.id]"
+  [style.cursor]="'pointer'">{{menu.name | uppercase}}</h2>
+  <p class="card-text" [title]="menu.description">{{menu.description | slice:0:21}}</p>
+
+  <strong>{{menu.price | currency:'INR':'symbol':'1.0-2'}}</strong>
+  <app-star
+  [rating]="menu.rating"
+  (ratingClick)="onRatingClicked($event)">
+</app-star>
+
+</div>
+
+  <a class="btn btn-primary"(click)="addItem($event, menu)">Add Item</a><br>
+
+
+</div>
+</div>
+</ng-container>
+
+
+<div class="row" *ngIf="loading">
+  <div class="col text-center">
+    <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+    <path fill="#e74c3c" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+      <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="rotate"
+      dur="1s"
+      from="0 50 50"
+      to="360 50 50"
+      repeatCount="indefinite" />
+    </path>
+  </svg>
+</div>
+</div>
+  <div class="row" *ngIf="errorMessage">
+    <div class="col">
+      <div class="alert alert-danger" role="alert">
+        {{errorMessage}}
+      </div>
+    </div>
+  </div>
+
+
+
+
